@@ -1,32 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Need to update the CSS with new fonts -->
   <head>
-    <title>CodeCats</title>
+    <title>Bored Ape Cannabis Club</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/x-icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/x-icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/x-icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="images/x-icon/site.webmanifest" />
-    <link rel="stylesheet" href="css/three-dots.min.css" />
-    <link rel="stylesheet" href="css/splide.min.css" />
+    <!-- favicon REPLACE ALL OF THE ICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/x-icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/x-icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/x-icon/favicon-16x16.png">
+    <link rel="manifest" href="images/x-icon/site.webmanifest">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -34,182 +19,190 @@
       <div class="container">
         <div class="logo">
           <a href="/">
-            <img src="images/x-icon/favicon-32x32.png" alt="logo" />
+            <img src="images/x-icon/BACCfavicon-32x32.png" alt="logo" />
           </a>
         </div>
         <div class="menu">
           <a
-            href="https://discord.gg/A9CnsVzzkZ"
+            href="https://discord.gg/j5vAN4md"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="images/header/discord.webp" alt="Discord" />
+            <img src="images/header/discord.png" alt="Discord" />
           </a>
           <a
-            href="https://twitter.com/codeSTACKr"
+            href="https://twitter.com/BoredApe_420"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="images/header/twitter.webp" alt="Twitter" />
+            <img src="images/header/twitter.png" alt="Twitter" />
           </a>
           <a
-            href="https://opensea.io/collection/codecats"
+            href="https://www.reddit.com/r/BoredApeCannabisClub/?styling=true"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="images/header/opensea.webp" alt="Opensea" />
+            <img src="images/header/reddit.png" alt="Reddit" />
           </a>
-          <button class="wallet-btn btn" id="connectWallet">
-            <span>Connect Wallet</span>
-          </button>
+          <a
+            href="https://t.me/BoredApeCannabisClub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/telegram.png" alt="Telegram" />
+          </a>
+          <a
+            href="https://opensea.io/collection/theboredapecannabisclub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/opensea.png" alt="Opensea" />
+          </a>
+             <button class="wallet-btn btn" id="connectWallet">  
+             <span>Connect Wallet</span> 
+             </button>
         </div>
       </div>
-    </header>
-
-    <section class="container not-connected">
-      <div>
-        <h2 id="welcomeH2">Connect to MetaMask to Get Started</h2>
-        <h1 id="welcomeH1">Welcome to the CodeCats NFT Project!</h1>
-        <p id="welcomeP">
-          The CodeCats NFT Project is a decentralized, open-source project that aims to demonstrate how to develope and launch your own NFT Collection. Follow step by step on the <a href="https://youtube.com/codestackr"  target="_blank" rel="noopener noreferrer">codeSTACKr</a> YouTube channel.
+		
+	<!-- Bored Ape Cannabis Club Heading-->
+	<div class="owner-status">
+		<p><h2>Bored Ape Cannabis Club</h2></p>
+		<p>
+            <img src="images/banners-and-logos/BACCLogo100x50.png" alt="Logo" />
         </p>
-      </div>
-    </section>
-
+	    <p>
+           <img src="images/banners-and-logos/BACCWebsiteBanner.png" alt="banner" />
+        </p>
+    </div>
+		
+  </header>
+	  
     <section class="container">
-      <div class="countdown card">
-        <div id="countdown">
-          <ul class="count-down" data-date="">
-            <li class="clock-item">
-              <span class="count-number days">20</span>
-              <p class="count-text">Days</p>
-            </li>
-
-            <li class="clock-item">
-              <span class="count-number hours">20</span>
-              <p class="count-text">Hour</p>
-            </li>
-
-            <li class="clock-item">
-              <span class="count-number minutes">20</span>
-              <p class="count-text">Min</p>
-            </li>
-
-            <li class="clock-item">
-              <span class="count-number seconds">20</span>
-              <p class="count-text">Sec</p>
-            </li>
-          </ul>
-          <h2 id="subHeading">Pre-Sale Countdown</h2>
-        </div>
-        <h1 id="mainHeading">NFT Drop Coming Soon!!</h1>
-        <p id="mainText">
-          A new batch of cute cats will be available very soon!
-        </p>
-        <a
-          id="actionButton"
-          href="https://discord.gg/A9CnsVzzkZ"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hero-btn btn"
-          ><span>Join the Catmmunity</span>
-        </a>
-        <div id="mintContainer" class="mint-container hidden">
-          <div class="info-container">
-            <div>
-              <h3>Supply</h3>
-              <p id="totalSupply">100</p>
-            </div>
-            <div>
-              <h3>Price Per Mint</h3>
-              <p id="pricePerMint">1 ETH</p>
-            </div>
-            <div>
-              <h3>Max</h3>
-              <p id="maxPerMint">5 per wallet</p>
-            </div>
-          </div>
-          <div class="mint-qty">
-            <span>
-              <button class="input-number-decrement btn" id="mintDecrement">–</button>
-              <input
-                id="mintInput"
-                class="input-number btn"
-                type="number"
-                value="1"
-                min="1"
-                max="5"
-              />
-              <button class="input-number-increment btn" id="mintIncrement">+</button>
-            </span>
-            <button id="setQtyMax" class="btn">SET MAX</button>
-          </div>
-          <div class="total-price-container">
-            <h3>Total</h3>
-            <p id="totalPrice">.001 ETH</p>
-          </div>
-          <button id="mintButton" class="hero-btn btn mint-btn">Mint</button>
-        </div>
-      </div>
-      <div class="minted-container card show-card hidden">
-        <h1>🎉</h1>
-        <h2>Minted!</h2>
-        <p>Here's your trasaction link:</p>
-        <a id="mintedTxnBtn" href="" target="_blank" rel="noopener noreferrer">
-          <button class="hero-btn btn">View Transaction</button>
-        </a>
-        <p>View it in the collection:</p>
-        <a
-          id="mintedLinkBtn"
-          href="https://testnets.opensea.io/collection/teststackr-collection"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div class="owner-status"></div>
+      <div class="countdown">
+	    <!-- Launch date is set for Saturday 27 March at 16:00:45 UTC/my local time 10:00:45 -->
+        <ul
+          id="countdown"
+          class="count-down"
+          data-date="Mar 27, 2022 04:00:45 PM UTC"
         >
-          <button class="hero-btn btn">View Collection</button>
-        </a>
-      </div>
-    </section>
+          <li class="clock-item">
+            <span class="count-number days">20</span>
+            <p class="count-text">Days</p>
+          </li>
 
-    <div id="spinner" class="dot-spin"></div>
+          <li class="clock-item">
+            <span class="count-number hours">20</span>
+            <p class="count-text">Hour</p>
+          </li>
 
-    <div class="splide">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <img src="images/slider/0.png" />
+          <li class="clock-item">
+            <span class="count-number minutes">20</span>
+            <p class="count-text">Min</p>
           </li>
-          <li class="splide__slide">
-            <img src="images/slider/1.png" />
-          </li>
-          <li class="splide__slide">
-            <img src="images/slider/2.png" />
-          </li>
-          <li class="splide__slide">
-            <img src="images/slider/3.png" />
-          </li>
-          <li class="splide__slide">
-            <img src="images/slider/4.png" />
-          </li>
-          <li class="splide__slide">
-            <img src="images/slider/5.png" />
-          </li>
-          <li class="splide__slide">
-            <img src="images/slider/6.png" />
-          </li>
-          <li class="splide__slide">
-            <img src="images/slider/7.png" />
-          </li>
-          <li class="splide__slide">
-            <img src="images/slider/8.png" />
+
+          <li class="clock-item">
+            <span class="count-number seconds">20</span>
+            <p class="count-text">Sec</p>
           </li>
         </ul>
-      </div>
-    </div>
-
-    <script src="js/metamask-onboarding.bundle.js"></script>
-    <script src="js/web3.min.js"></script>
-    <script src="js/splide.min.js"></script>
-    <script src="js/constants.js"></script>
+        <h2>Complete Drop Coming Soon!</h2> 
+        <p>Flying high with A new community of Bored Apes, available soon!</p>
+		</section>
+		<body class="container">
+		   <p align="left">The fifteen Genesis Apes have dropped so you can see them now on Opensea. They will be for sale when the remaining Apes drop when the timer hits zero!</p>
+        </body>
+	    <section class="container">
+        <a href="https://discord.gg/j5vAN4md" target="_blank" rel="noopener noreferrer" class="hero-btn btn">
+	       <img src="images/header/discord.png" alt="Discord" width="15" height="15"/>
+           <span>Join the Bored Ape Cannabis Club Discord  </span>
+        </a>
+		   <span> or... </span>
+		<a href="https://opensea.io/collection/boredapecannabisclub" target="_blank" rel="noopener noreferrer" class="hero-btn btn">
+		   <img src="images/header/opensea.png" alt="Opensea" width="15" height="15"/>
+           <span>Come on over to Opensea to buy your Bored Ape and join the Club!</span>
+        </a>
+		</section>
+		<p>&nbsp;</p>
+		  
+		<h2>About Bored Ape Cannabis Club</h2>
+	    </section>  
+		<body class="container">
+		<p>&nbsp;</p>
+         
+        <p align="left">Bored Apes Cannabis Club is a collection of 9,985 script generated Apes and 15 Hand-created 'Genesis' Apes that are unique in a special way for a total of 10,000 Apes! </p>
+		 <p>&nbsp;</p> 
+		<p align="left">Each of the scripted Apes is created randomly from a selecion of various backgrounds, tops, glasses, smokeables and I threw in the BACC logo as well.  They were given rarity data, so some are more rare than others, and of course the Genesis Apes are unique, each with a special meaning, and there are only 15 of them, each made by hand, and are not script generated. I made one super special just for Justin Beiber (sneak peak below), since I know he owns a Bored Ape! Oh and he's Canadian, and this is kind of a Canadian thing since canabis became legal in Canada a couple of years ago, there is some specific Canadian content in some of the Apes too... maybe some day the US and the rest of the world will follow!  There's also another super special Genesis Ape which whick was created for another project, maybe they'll scoop it!  The Genesis Apes are up on Opensea and will bea available for purchase soon.</p>
+			<p>&nbsp;</p>
+		<section class="container"> 
+		<p>
+           <img src="images/banners-and-logos/GenesisJB.png" alt="JB" width="300" height="300" />
+        </p>
+		</section> 
+			<p>&nbsp;</p>
+		<p align="left">These were developed by a small team, with a little help from The Peanut Gallery and Co. and Jesse at CodeStackr, thank you for the website template, and some great videos that helped make this project happen you guys are awesome! </p>
+			<p>&nbsp;</p>
+		<section class="container"> 
+		<p>
+           <img src="images/banners-and-logos/GenesisM.png" alt="GenesisM" width="300" height="300" />
+			<img src="images/banners-and-logos/BACCLogo.png" alt="Logo" width="100" height="100" />
+			<img src="images/banners-and-logos/GenesisC.png" alt="GenesisC" width="300" height="300" />
+        </p>
+			<p>&nbsp;</p>
+		</section> 
+		<p align="left">This Bored Ape is meant to be a collectible. There are no concrete plans just yet for the fuure of The Bored Ape Cannabis Club, however you should be able to do everything with your BACC Ape than you can do with your Bored Ape, like hit up the Bored Ape Vibes lounge in Decentraland... who knows maybe a cannabis lounge in there some day!</p>
+			<p>&nbsp;</p>	
+		<p align="left">This is a recent update, just before launch... we have purchased land in two Metaverses and will be setting up a lounge, no timeframe on this yet but it is in our roadmap, watch here for updates.</p>
+			
+		<p align="left">&nbsp;
+		<hr size="1" noshade>
+		</p>
+	    </body>  
+		 
+        <section class="container">
+        <p>
+        <div class="menu">
+          <a
+            href="https://discord.gg/j5vAN4md"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/discord.png" alt="Discord" />
+          </a>
+          <a
+            href="https://twitter.com/BoredApe_420"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/twitter.png" alt="Twitter" />
+          </a>
+          <a
+            href="https://www.reddit.com/r/BoredApeCannabisClub/?styling=true"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/reddit.png" alt="Reddit" />
+          </a>
+          <a
+            href="https://t.me/BoredApeCannabisClub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/telegram.png" alt="Telegram" />
+          </a>
+          <a
+            href="https://opensea.io/collection/theboredapecannabisclub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/opensea.png" alt="Opensea" />
+          </a>
+        </div>
+	 </p>
+	</div>
+   </section>  
+	
+    <script src="https://cdn.jsdelivr.net/npm/@metamask/onboarding@1.0.1/dist/metamask-onboarding.bundle.js"></script>
     <script src="js/countdown.js"></script>
     <script src="js/app.js"></script>
   </body>
