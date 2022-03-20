@@ -28,7 +28,7 @@ let {
 
 const deployContract = async () => {
   const ok = await yesno({
-    question: `Is all REQUIRED contract information correct in config.js? (y/n):`,
+    question: `Hey Dude, is all REQUIRED contract information correct in config.js? (y/n):`,
     default: null,
   });
   
