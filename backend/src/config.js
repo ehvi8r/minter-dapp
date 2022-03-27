@@ -1,3 +1,10 @@
+// ** Notes for Polygon Production:
+//    1. Change 'rinkeby' to 'polygon'
+//    2. Change wallet address/owner address/treasury address
+//    3. Change contract, remove rinkeby contract line 98 and uncomment line 97
+//    4. Change GrowEditionSize numbers for production
+//    5. Change public mint start date to 27 March 
+
 require('dotenv').config();
 const basePath = process.cwd();
 const fs = require("fs");
@@ -66,7 +73,8 @@ const CHAIN = 'rinkeby'; // only rinkeby for testing or polygon for production
 const CONTRACT_NAME = 'THE BORED APE CANNABIS CLUB';
 const CONTRACT_SYMBOL = 'BACC';
 const CONTRACT_TYPE = 'erc721';
-const METADATA_UPDATABLE = false; // set to false if you don't want to allow metadata updates after minting, true if you're doing a reveal
+const METADATA_UPDATABLE = true; // set to true for testing
+// const METADATA_UPDATABLE = false; // set to false if you don't want to allow metadata updates after minting, true if you're doing a reveal
 const OWNER_ADDRESS = '0x91932159EeB1F5653c9c60C62B530A4d421e09F8';  // Contract Owner and Treasury Owner (keep the sqme)
 const TREASURY_ADDRESS = '0x91932159EeB1F5653c9c60C62B530A4d421e09F8';  // This is where buyer funds will go, and will be stored in the contract until collected by the owner
 const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
@@ -89,7 +97,8 @@ const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the
 const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
-let CONTRACT_ADDRESS = "0xC7AA3cB4FF8763E67f95535F248C0DEeE6F567dC"; // If you want to manually include it
+// let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually include it, not necessary
+let CONTRACT_ADDRESS = "0xC7AA3cB4FF8763E67f95535F248C0DEeE6F567dC"; // This is the RINKEBY contract for testing, remove for production
 
 // Removed Generic as I will not be doing a reveal, and if left in it causes an error when uploading Metadata (looking for Generic Metadata in _ipfsMetasGeneric and the file is not there).
 // Generic Metadata is optional if you want to reveal your NFTs, I will NOT be doing a reveal
