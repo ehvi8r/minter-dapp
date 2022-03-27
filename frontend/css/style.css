@@ -662,6 +662,20 @@ footer {
   color: var(--bg-color);
 }
 
+/* EMAIL FORM  */
+email-form {
+ text-align: left;
+ width: 550px;
+ height: 25px;
+ margin: auto;
+ position: relative;
+}
+email-input {
+ width: 250px;
+ height: 15px;
+}
+
+
 /* SPINNER */
 .dot-spin {
   position: absolute;
