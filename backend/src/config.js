@@ -85,7 +85,7 @@ const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a singl
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 // ** For testing set the start date to today at 0800 UTC
 // Change the following line then: $ npm run update_public_mint_start_date ((Catch Error: NOK Contract is Frozen, need to create another contract))
-const PUBLIC_MINT_START_DATE = "2022-03-28T08:00:45+00:00";
+const PUBLIC_MINT_START_DATE = "2022-03-27T08:00:45+00:00";
 // const PUBLIC_MINT_START_DATE = "2022-04-03T16:00:45+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00 (+00:00 is UTC Time, EST is currently UTC - 4, we are at UTC -6 right now)
 //                              2022-04-03T10:00:45-06:00 would be my current local time
 //                              April 03 2022 at 10:00 am local time
@@ -100,7 +100,7 @@ const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually
 
 // ** OPTIONAL **
 // let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually include it, not necessary
-let CONTRACT_ADDRESS = "0xC7AA3cB4FF8763E67f95535F248C0DEeE6F567dC"; // This is the RINKEBY contract for testing, remove for production
+let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // This is the RINKEBY contract for testing, remove for production
 
 // Removed Generic as I will not be doing a reveal, and if left in it causes an error when uploading Metadata (looking for Generic Metadata in _ipfsMetasGeneric and the file is not there).
 // Generic Metadata is optional if you want to reveal your NFTs, I will NOT be doing a reveal
