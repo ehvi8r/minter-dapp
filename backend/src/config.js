@@ -3,7 +3,7 @@
 //    2. Change wallet address/owner address/treasury address
 //    3. Change contract, remove rinkeby contract line 98 and uncomment line 97
 //    4. Change GrowEditionSize numbers for production
-//    5. Change public mint start date to 27 March 
+//    5. Change public mint start date to 03 April 
 
 require('dotenv').config();
 const basePath = process.cwd();
@@ -24,8 +24,8 @@ const layerConfigurations = [
   {
     // Code generated Apes from layers
     // For testing just use small numbers and 18 Genesis
-    // For Polygon/Opensea.io Mainnet set to 5482 (+18 Genesis) = 5.5K (Max for NFTPro Free Tier = 5000 + an additional 500 from Johannes (ref: email 11 Mar 22)).
-      growEditionSizeTo: 2,
+    // For Polygon/Opensea.io Mainnet set to 9980 (+20 Genesis) = 10K for additional $$ (Max for NFTPro Free Tier = 5000 + an additional 500 from Johannes (ref: email 11 Mar 22)).
+      growEditionSizeTo: 5,
       layersOrder: [
         { name: "Backgrounds" },
         { name: "Apes" },
@@ -67,7 +67,7 @@ const extraMetadata = {
 // ** REQUIRED **
 const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
 const LIMIT = 2; // Your API key rate limit
-const CHAIN = 'rinkeby'; // only rinkeby for testing or polygon for production
+const CHAIN = 'rinkeby'; // only 'rinkeby' for testing or 'polygon' for production
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
 const CONTRACT_NAME = 'THE BORED APE CANNABIS CLUB';
@@ -77,16 +77,18 @@ const METADATA_UPDATABLE = true; // set to true for testing
 // const METADATA_UPDATABLE = false; // set to false if you don't want to allow metadata updates after minting, true if you're doing a reveal
 const OWNER_ADDRESS = '0x91932159EeB1F5653c9c60C62B530A4d421e09F8';  // Contract Owner and Treasury Owner (keep the sqme)
 const TREASURY_ADDRESS = '0x91932159EeB1F5653c9c60C62B530A4d421e09F8';  // This is where buyer funds will go, and will be stored in the contract until collected by the owner
-const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = 1; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!  Check MATIC prices on www.coionmarketcap.com
+const MAX_SUPPLY = 10000; // The maximum number of NFTs that can be minted. ** CANNOT BE UPDATED! **
+// ** Be careful with this on Polygon price is in MATIC and cannot be updated once contract is created.
+const MINT_PRICE = 1; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. ** CANNOT BE UPDATED! **  Check MATIC prices on www.coionmarketcap.com
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 // ** For testing set the start date to today at 0800 UTC
-// Change the following line then: $ npm run update_public_mint_start_date ((Catch Error: NOK Contract is Frozen))
-const PUBLIC_MINT_START_DATE = "2022-03-20T08:00:45+00:00";
-// const PUBLIC_MINT_START_DATE = "2022-03-27T16:00:45+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00 (+00:00 is UTC Time, EST is currently UTC - 4, we are at UTC -6 right now)
-//                              2022-03-27T10:00:45-06:00 would be my current local time
+// Change the following line then: $ npm run update_public_mint_start_date ((Catch Error: NOK Contract is Frozen, need to create another contract))
+const PUBLIC_MINT_START_DATE = "2022-03-28T08:00:45+00:00";
+// const PUBLIC_MINT_START_DATE = "2022-04-03T16:00:45+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00 (+00:00 is UTC Time, EST is currently UTC - 4, we are at UTC -6 right now)
+//                              2022-04-03T10:00:45-06:00 would be my current local time
+//                              April 03 2022 at 10:00 am local time
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00

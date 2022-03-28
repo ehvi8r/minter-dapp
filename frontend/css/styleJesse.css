@@ -1,20 +1,30 @@
 /* FONTS */
 /* NEED to import final product fonts from google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
+/* Link for AOS 
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+*/
 /* GLOBAL STYLES */
 /* With new fonts, need to change primary, secondary and code fonts below */
 :root {
   --font-primary: 'Poppins', sans-serif;
   --font-secondary: 'Arvo', serif;
   --font-code: 'Roboto', monospace;
-  --bg-color: #000000;
+  --bg-color: #000000;                /* changed to #192E41 Midnight Blue from black #000000  */
+  --bg-color-transparent: #00163f80;
   --font-color: #ffffff;
+  --btn-bg-color-blue: #7A97AB;       /* changed from #192E41 Midnight Blue from #ffffff to #000000 to AED2E7*/
+  --btn-bg-color-sage: #7A9B90;       /* changed to #192E41 Midnight Blue from #ffffff to #000000 to AED2E7*/
   --button-bg-color: #00163f80E;      /* added this is a border color so it is transparent  */
   --cnt-bg-color: #ffffff;            /* added --cnt-bg-color for counters */
   --blue-bg-color: #7A97AB;           /* changed from #0D659D Blue Grotto from #6495ED */
   --blue-mint-button-color: #7A97AB;  /* changed from #0D659D Blue Grotto from #191970 */
-/* Colour Pallet for High Flight  */
+   /* Color Pallet Misty Midnight  */  
+    --midnight-blue: #192E41;
+    --dark-blue: #05263B;
+    --blue-grotto: #0D659D;
+    --misty-blue: #BBC8DE;	
+	/* Colour Pallet for High Flight  */
 	--highflight-black:  #000000;
 	--midnight-blue: #192E41;
     --blue: #7A97AB;
@@ -27,6 +37,22 @@
   /* --header-shadow: #000 0px 0px 5px;   changed from 0px 0px 5px; */
   --header-shadow: var(--accent-color) 0px 0px 0px;  /** change to 0 0 0 4 from 0 0 0 **/
   --card-shadow: var(--accent-color) 0px 0px 20px;
+}
+
+#leftDiv{
+  float:left;
+  padding:0px;
+  margin-left: 10px;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+#rightDiv{
+  float:right;
+  padding:0px;
+  margin-right: 10px;
+  padding-left: 0px;
+  margin-left: 0px;
 }
 
 * {
@@ -47,11 +73,18 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 960px;
+  max-width: 960px;     /** changed from 960  **/
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 0rem 0rem;   /** change 1rem and 2 rem to 0 rem and 0 rem  **/
 }
 
+.centre-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-blue);
+}
 /* HEADER */
 
 header {
@@ -74,7 +107,7 @@ header .container {
 
 .btn {
   display: inline-block;
-  padding: 0.25rem 2rem;             /* changed from 1 2 to 2 2  **/
+  padding: 0.5rem 2rem;             /* changed from 1 2 to 2 2  **/
   background: var(--btn-bg-color);
   color: var(--font-color);         /* changed --accent-color to --font-color */
   font-family: var(--font-code);    /* changed to --font-code */
@@ -107,6 +140,7 @@ header .container {
   font-size: 1.2 rem;           /* was 1.2 */
   padding: 1.5rem 3rem;         /* was 1.5rem 3rem */
   transform: translateY(4px);   /* added to give a hover effect */
+  border-color: transparent;    /* added  */
 }
 
 /* COUNTDOWN SECTION */
@@ -124,7 +158,7 @@ body .container {
   justify-content: space-between;
   align-items: left;
 }
-
+	
 .countdown {
   display: flex;
   flex-direction: column;
@@ -167,8 +201,9 @@ body .container {
   line-height: 1;
   border-radius: 0 0 4px 4px;             /* changed to 4px 4px 4px 4px from 0 0 4px 4px  *no changed back  */
 }
+
 .countdown h1 {
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--blue-bg-color);  /** change to blue-bg-color **/
   font-style: italic;
   margin: 2rem 0;
   font-size: 3.5rem;
@@ -179,6 +214,13 @@ body .container {
   font-size: 1.1rem;
   font-family: var(--font-secondary);
   margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* OWNER STYLES */
+
+.owner-status {
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -235,7 +277,7 @@ body .container {
 .input-number-decrement,
 .input-number-increment {
   user-select: none;
-  background-color: var(--bg-color);  /** added this line  **/
+  background-color: var(--midnight-blue);  /** added this line  **/
 }
 
 .total-price-container {
@@ -273,11 +315,22 @@ body .container {
   margin: 1rem 0;
 }
 
-/* OWNER STYLES */
+/* SLIDDER */
 
-.owner-status {
-  font-size: 2rem;
-  text-align: center;
+.splide {
+  position: absolute;
+  top: 90px;
+  left: 5rem;
+  z-index: -1;
+}
+
+.splide__slide {
+  border: var(--blue-bg-color) solid;
+  border-width: 5px 10px;
+}
+
+.splide__slide img {
+  width: 100%;
 }
 
 /* COLLABORATION */
@@ -658,21 +711,8 @@ footer {
   text-align: center;
   /* font-weight: bold;  NO Bold */
   padding: 0.5rem 0;
-  background: var(--light-blue);
+  background: var(--sage);
   color: var(--bg-color);
-}
-
-/* EMAIL FORM  */
-email-form {
- text-align: left;
- width: 550px;
- height: 25px;
- margin: auto;
- position: relative;
-}
-email-input {
- width: 250px;
- height: 15px;
 }
 
 /* SPINNER */
@@ -717,31 +757,116 @@ email-input {
   .not-connected p, .not-connected a {
     font-size: 1rem;
   }
-
-/* MEDIA QUERIES 
-
-@media screen and (max-width: 768px) {
-  .menu {
-    gap: 1rem;
+  .countdown ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
-  .wallet-btn {
-    margin-left: 0;
-    padding: 1rem;
-    max-width: 8rem;
+  .countdown .clock-item {
+    width: 100%;
+  }
+  .countdown .clock-item .count-number {
+    font-size: 1.5rem;
+  }
+  .countdown .clock-item .count-text {
+    font-size: 1rem;
   }
   .countdown h1 {
     font-size: 2rem;
+    margin: 1rem 0;
+  }
+  .countdown h2 {
+    padding-top: 0.5rem;
   }
   .countdown p {
     font-size: 1rem;
   }
+  .card {
+    padding: 1rem;
+  }
+  .mint-qty .btn {
+    padding: 1rem;
+    font-size: 13px;
+  }
+  .collaboration {
+    padding: 2rem 0;
+  }
+  .collaboration h1 {
+    font-size: 2.5rem;
+  }
+  .collaboration p {
+    font-size: 1rem;
+  }
+  .collaboration .flex {
+    flex-direction: column;
+  }
+  .collaboration span img {
+    width: 60vw;
+    margin-left: 0;
+  }
+  .collabs {
+    flex-direction: column;
+  }
+  .collabs .collab {
+    margin: 3rem 0;
+  }
+  .splide-2 .splide__slide img {
+    width: 33.3vw;
+  }
+  .decode {
+    padding: 2rem 0;
+  }
+  .decode h1 {
+    font-size: 2.5rem;
+  }
+  .decode h2 {
+    font-size: 1.5rem;
+  }
+  .decode p {
+    font-size: 1rem;
+  }
+  .decode span {
+    float: none;
+    display: block;
+  }
+  .decode span img {
+    width: 100%;
+    object-fit: cover;
+    margin-right: 0;
+  }
+  .roadmap {
+    margin-top: 1rem;
+  }
+  .wrapper {
+    margin: 1rem auto;
+  }
+  .hero-btn {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .team {
+    padding: 2rem 0;
+  }
+  .team h1 {
+    font-size: 2.5rem;
+  }
+  .team .row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .faq h2 {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+  .faq p {
+    font-size: 1rem;
+  }
 }
-*/
-	
-	
+
 /* UTILITIES */
-/* code this out for testing */ 
+/* code this out for testing
 .hidden {
   display: none;
 }
-
+end code this out for testing */
