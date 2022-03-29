@@ -83,20 +83,29 @@ const MINT_PRICE = 1; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. 
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
+
+// Dates:
+//         Whitelist:  9 Apr 2022
+//         Presale:    16 Apr 2022
+//         Public Sale 23 Apr 2022
+//
 // ** For testing set the start date to today at 0800 UTC
 // Change the following line then: $ npm run update_public_mint_start_date ((Catch Error: NOK Contract is Frozen, need to create another contract))
-const PUBLIC_MINT_START_DATE = "2022-03-27T08:00:45+00:00";
+const PUBLIC_MINT_START_DATE = "2022-04-23T08:00:45+00:00";
 // const PUBLIC_MINT_START_DATE = "2022-04-03T16:00:45+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00 (+00:00 is UTC Time, EST is currently UTC - 4, we are at UTC -6 right now)
-//                              2022-04-03T10:00:45-06:00 would be my current local time
-//                              April 03 2022 at 10:00 am local time
-
+//                              2022-04-23T10:00:45-06:00 would be my current local time
+//                              April 23 2022 at 10:00 am local time
+ 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
+const PRESALE_MINT_START_DATE = "2022-04-16T08:00:45+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
+//                              April 16 2022 at 10:00 am local time
+
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x91932159EeB1F5653c9c60C62B530A4d421e09F8"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
 const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
+//                              April 09 2022 at 10:00 am local time Launch date whitelisting available right away
 
 // ** OPTIONAL **
 // let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually include it, not necessary
