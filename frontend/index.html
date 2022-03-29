@@ -69,11 +69,13 @@
           >
             <img src="images/header/opensea.png" alt="Opensea" />
           </a>
-             <button class="wallet-btn btn" id="connectWallet">  
+             <button class="wallet-btn btn" id="connectWallet" >
+			 <!-- <button class="banner-menu" id="connectWallet" > -->  
              <span>Connect Wallet</span> 
              </button>
         </div>
       </div>	
+ </header>	
 	<!-- Bored Ape Cannabis Club Heading-->
 	<div class="owner-status">
 		<p><!-- <h2>The Bored Ape Cannabis Club</h2> --><br></p>
@@ -83,16 +85,21 @@
 	    <p>
            <img src="images/banners-and-logos/BACCBannerM1000x278.png" alt="banner" width="1000" height="278"/>
         </p>
-    </div>	
-  </header>
-	  	  
-  <div class="main-wrapper">
-    <section class="container not-connected">
+    </div>	 
+    <div class="menu">
+      <section class="container not-connected">
         <div>
-          <h3>Connect to MetaMask to Get Started</h3><br> 
+          <h3 id="welcomeH3">Please Connect to MetaMask to Get Started</h3><br>
+          <a
+            href="https://discord.gg/j5vAN4md"
+            target="_blank"
+            class="banner-menu"
+            ><span>Get on the Waitlist!</span>
+          </a>
         </div>
-    </section>	
-  </div>	    
+      </section>
+  </div>  
+  	  
     <section class="container">
       <div class="owner-status"></div>
       <div class="countdown">
@@ -124,7 +131,7 @@
           <p>Flying high with a New Community of Bored Apes, available soon!</p>
 		</body>
 	  </div>
-	</section>
+    </section>
 	<div class="main-wrapper">
       <section class="container not-connected show-not-connected">
 		<a id="mintnButton" href="home.html" target="_self" rel="noopener noreferrer" class="hero-btn btn mint-btn">Enter </a>
