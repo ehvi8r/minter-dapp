@@ -1,35 +1,44 @@
 /* FONTS */
 /* NEED to import final product fonts from google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
+/* Link for AOS is in index
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+*/
 /* GLOBAL STYLES */
 /* With new fonts, need to change primary, secondary and code fonts below */
 :root {
   --font-primary: 'Poppins', sans-serif;
   --font-secondary: 'Arvo', serif;
   --font-code: 'Roboto', monospace;
-  --bg-color: #000000;
+  --bg-color: #000000;                /* changed to #192E41 Midnight Blue from black #000000  */
+  --bg-color-transparent: #00163f80;
   --font-color: #ffffff;
+  --btn-bg-color-blue: #7A97AB;       /* changed from #192E41 Midnight Blue from #ffffff to #000000 to AED2E7*/
+  --btn-bg-color-sage: #7A9B90;       /* changed to #192E41 Midnight Blue from #ffffff to #000000 to AED2E7*/
   --button-bg-color: #00163f80E;      /* added this is a border color so it is transparent  */
   --cnt-bg-color: #ffffff;            /* added --cnt-bg-color for counters */
   --blue-bg-color: #7A97AB;           /* changed from #0D659D Blue Grotto from #6495ED */
   --blue-mint-button-color: #7A97AB;  /* changed from #0D659D Blue Grotto from #191970 */
-/* Colour Pallet for High Flight  */
+   /* Color Pallet Misty Midnight  */  
+    --midnight-blue: #192E41;
+    --dark-blue: #05263B;
+    --blue-grotto: #0D659D;
+    --misty-blue: #BBC8DE;	
+	/* Colour Pallet for High Flight  */
 	--highflight-black:  #000000;
-	--midnight-blue: #192E41;
     --blue: #7A97AB;
     --light-blue: #B7C7D3;
     --sage: #7A9B90;
 	--eggplant: #84657A;
-	--tan: #BC955C
-	--rust: #DE6B30
+	--tan: #BC955C;
+	--rust: #DE6B30;
   --accent-color: #B7C7D3;            /* changed from #BBC8DE Misty Blue from #B0AFB1 (Grey)from #1d1b16 (Dark Grey) */
   /* --header-shadow: #000 0px 0px 5px;   changed from 0px 0px 5px; */
   --header-shadow: var(--accent-color) 0px 0px 0px;  /** change to 0 0 0 4 from 0 0 0 **/
   --card-shadow: var(--accent-color) 0px 0px 20px;
 }
 
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -70,6 +79,21 @@ header .container {
   align-items: center;
 }
 
+ .banner-menu {
+	 display: flex;                      /* added top menu bar for white text no underline */
+	 font-size: 15px;                    /* 0.5rem; */
+	 line-height: 1;   
+     color: #B7C7D3;         
+	 gap: 2rem;
+	 align-items: center;
+	 /* text-decoration: none; */
+	 transform: translateY(4px);   /* added to give a hover effect */
+  }
+.banner-menu:hover {
+  box-shadow: none;
+  color:#B0AFB1;
+}
+	
 /* BUTTONS */
 
 .btn {
@@ -683,6 +707,33 @@ email-input {
   transform: translate(-50%, -50%) scale(3);
 }
 
+/* SLIDDER */
+
+.splide {
+  position: absolute;
+  top: 98px;  /* 120 */ 
+  left: 5rem;
+  gap: 2rem;
+  z-index: -1;
+  max-height: 100vh;
+}
+
+.splide .splide__track {
+  max-height: 100px;  /* 100vh */
+}
+.splide .splide__slide {
+  border: var(--accent-color) solid;
+  border-width: 5px 10px;
+}
+
+.splide .splide__slide img {
+  width: 98px;  /* 100% or 80% */
+}
+
+.splide-2 .splide__slide img {
+  width: 98px;  /* 20vw or 16vw */
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
@@ -717,27 +768,8 @@ email-input {
   .not-connected p, .not-connected a {
     font-size: 1rem;
   }
-
-/* MEDIA QUERIES 
-
-@media screen and (max-width: 768px) {
-  .menu {
-    gap: 1rem;
-  }
-  .wallet-btn {
-    margin-left: 0;
-    padding: 1rem;
-    max-width: 8rem;
-  }
-  .countdown h1 {
-    font-size: 2rem;
-  }
-  .countdown p {
-    font-size: 1rem;
-  }
 }
-*/
-	
+
 	
 /* UTILITIES */
 /* code this out for testing */ 
