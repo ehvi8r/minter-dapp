@@ -1,9 +1,9 @@
 const contractAddress = "0xD4d2e29F4ce3733f6AE942b708619B34644049c4"; //Replace with your own contract address
-const chain = 'rinkeby'; // rinkeby or polygon
+const chain = "rinkeby"; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the Bored Ape Cannabis Club NFT Project!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
-const welcome_p = 'The Bored Ape Cannabis Club NFT Project is a decentralized, open-source project that aims to create an highly desireable NFT Collectible';
+const welcome_p = "Welcome to The Bored Ape Cannabis Club NFT Project, Flying High with Bored Apes!";
 const h1_presale_coming_soon = "NFT Drop Coming Soon!";
 const h1_presale_mint = "Pre-Sale Minting Open!";
 const h1_public_mint = "Public Minting Open!";
