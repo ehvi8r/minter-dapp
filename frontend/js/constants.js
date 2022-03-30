@@ -1,4 +1,4 @@
-const contractAddress = "0xD4d2e29F4ce3733f6AE942b708619B34644049c4"; //Replace with your own contract address
+const contractAddress = "0xfBd22dE0A49A7C1Ae0D53F040b171FC30a8d9b15"; //Replace with your own contract address
 const chain = "rinkeby"; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the Bored Ape Cannabis Club NFT Project!";
