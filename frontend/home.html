@@ -20,7 +20,7 @@
 
     <!-- AOS animation code downloaded to frontedn folder -->
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />  -->
-    <link rel="stylesheet" href="aos-master/dist/aos.css" rel="stylesheet" /> 
+    <link rel="stylesheet" href="aos-master/dist/aos.css" /> 
 
     <!-- This is the slider code -->	  
     <link rel="stylesheet" href="css/three-dots.min.css" />
@@ -141,8 +141,7 @@
            <span>Opensea is a secondary market where you can buy a previously minted Cannabis Club Ape to join the Club  </span>
         </a>
 	</section>
-	<br><br>
-			
+		
     <div class="main-wrapper">
       <section class="container not-connected show-not-connected hidden">
         <div>
@@ -153,23 +152,33 @@
 		</div>
           <a id="mintnButton" href="https://discord.gg/j5vAN4mdZ" target="_blank" rel="noopener noreferrer" class="hero-btn btn mint-btn">Get on the Whitelist! </a><br> 
    </section>
-	
+</div>	
+	  
 <!-- Timings/Schedule  -->	
-<body><br>
-  <section class="container" > 
-  <ol>
-    <li>
-      <p>Whitelisting Opens on 9 April 2022 </p>
-    </li>
-    <li>
-      <p> Presale Opens on 16 April 2022 </p>
-    </li>
-    <li>
-      <p>Public Sale Opens on 23 April 2022 </p>
-    </li>																				   
-  </ol>
-   </section>
-</body><br>
+<section class="container"> 
+<div class="row">
+  <div class="column" id="launch-info-image" align="left">
+    <p align="left">
+       <img src="images/banners-and-logos/launch.png" alt="launch" width="100" height="100"/>Launching soon...
+    </p><br>
+  </div>
+  <div class="column" id="launch-info" align="left">
+    <p align="left">
+    <ol>
+      <li>
+        <p>Whitelisting Opens on 9 April 2022 </p>
+      </li>
+      <li>
+        <p>Presale Opens on 16 April 2022 </p>
+      </li>
+      <li>
+        <p>Public Sale Opens on 23 April 2022 </p>
+      </li>	
+	  </ol>
+    </p>
+ </div>
+</div>
+</section>
 <!--  End Timings/Schedule -->
 
    <section class="container not-connected show-not-connected">	
@@ -250,7 +259,6 @@
   </div>
  </div>
 </section>	
-</div>	
 </body>	
 
 <p align="left"><br>
@@ -345,6 +353,9 @@
 			<p align="left">&nbsp;</p>
 			
     <section>
+
+    <div id="spinner" class="dot-spin"></div>
+
       <div class="splide-2" align="center">
         <div class="splide__track">
           <ul class="splide__list" >
@@ -369,11 +380,11 @@
             <li class="splide__slide">
               <img src="images/slider/7.png" alt="slider image" height="98" width="98"/>
             </li>
-			<li class="splide__slide">
-			  <img src="images/slider/8.png" alt="slider image" height="98" width="98"/>
-			</li>
-			<li class="splide__slide">
-			  <img src="images/slider/9.png" alt="slider image" height="98" width="98"/>
+			      <li class="splide__slide">
+			        <img src="images/slider/8.png" alt="slider image" height="98" width="98"/>
+			      </li>
+			      <li class="splide__slide">
+			         <img src="images/slider/9.png" alt="slider image" height="98" width="98"/>
             </li>
           </ul>
         </div>
@@ -601,7 +612,9 @@
           </a>
         </div>
     </div>
-<div id="spinner" class="dot-spin"></div>
+  </section>
+
+<!-- <div id="spinner" class="dot-spin"></div> -->
 
     <script src="aos-master/src/js/aos.js"></script>
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
@@ -611,11 +624,12 @@
     <script src="js/constants.js"></script>
     <script src="js/countdown.js"></script>
     <script src="js/app.js"></script>
+    
 <script>
   AOS.init({
     disable: 'phone'
   });
 </script>
-</section>
+
 </body>
 </html>
