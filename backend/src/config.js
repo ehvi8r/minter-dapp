@@ -113,6 +113,7 @@ const PRESALE_WHITELISTED_ADDRESSES = ["0x91932159EeB1F5653c9c60C62B530A4d421e09
 
 // ** OPTIONAL **
 // let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually include it, not necessary
+// Contract Address from \backend\build\contract
 let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // This is the RINKEBY contract for testing, remove for production
 
 // Removed Generic as I will not be doing a reveal, and if left in it causes an error when uploading Metadata (looking for Generic Metadata in _ipfsMetasGeneric and the file is not there).
