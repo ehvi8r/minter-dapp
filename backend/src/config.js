@@ -79,32 +79,36 @@ const OWNER_ADDRESS = '0x91932159EeB1F5653c9c60C62B530A4d421e09F8';  // Contract
 const TREASURY_ADDRESS = '0x91932159EeB1F5653c9c60C62B530A4d421e09F8';  // This is where buyer funds will go, and will be stored in the contract until collected by the owner
 const MAX_SUPPLY = 10000; // The maximum number of NFTs that can be minted. ** CANNOT BE UPDATED! **
 // ** Be careful with this on Polygon price is in MATIC and cannot be updated once contract is created.
-const MINT_PRICE = 1; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. ** CANNOT BE UPDATED! **  Check MATIC prices on www.coionmarketcap.com
+const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH (set to .001 for testing), Polygon = MATIC. ** CANNOT BE UPDATED! **  Check MATIC prices on www.coionmarketcap.com
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 
 // Dates:
-//         Whitelist:  9 Apr 2022
-//         Presale:    16 Apr 2022
-//         Public Sale 23 Apr 2022
+//         Whitelist:   16 Apr 2022  (Whitelist is the Presale Date)
+//         Presale:     16 Apr 2022
+//         Public Sale: 23 Apr 2022
 //
-// ** For testing set the start date to today at 0800 UTC
+// ** For testing set the Dates to:
+//         Whitelist:   1 April 2022  (Whitelist is the Presale Date)
+//         Presale:     1 April 2022
+//         Public Sale: 2 April 2022
+//
 // Change the following line then: $ npm run update_public_mint_start_date ((Catch Error: NOK Contract is Frozen, need to create another contract))
-const PUBLIC_MINT_START_DATE = "2022-04-23T08:00:45+00:00";
-// const PUBLIC_MINT_START_DATE = "2022-04-03T16:00:45+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00 (+00:00 is UTC Time, EST is currently UTC - 4, we are at UTC -6 right now)
-//                              2022-04-23T10:00:45-06:00 would be my current local time
-//                              April 23 2022 at 10:00 am local time
+const PUBLIC_MINT_START_DATE = "2022-04-02T13:00:45+00:00";
+// const PUBLIC_MINT_START_DATE = "2022-04-03T13:00:45+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00 (+00:00 is UTC Time, EST is currently UTC - 4, we are at UTC -6 right now)
+//                                 2022-04-03T13:00:45-06:00 would be my current local time (UTC -6)
+//                                 April 03 2022 at 07:00 am local time Merida
  
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PRESALE_MINT_START_DATE = "2022-04-16T08:00:45+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
-//                              April 16 2022 at 10:00 am local time
+const PRESALE_MINT_START_DATE = "2022-04-01T13:00:45+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
+//                                April 01 2022 at 07:00 am local time
 
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x91932159EeB1F5653c9c60C62B530A4d421e09F8"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
-const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
+const PRESALE_WHITELISTED_ADDRESSES = ["0x91932159EeB1F5653c9c60C62B530A4d421e09F8"]; // only update if you want to manually set the whitelisted addresses
 //                              April 09 2022 at 10:00 am local time Launch date whitelisting available right away
 
 // ** OPTIONAL **
@@ -116,7 +120,7 @@ let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // This is the RINKEBY contract 
 //    const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 //    const GENERIC_TITLE = CONTRACT_NAME; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
 //    const GENERIC_DESCRIPTION = "REPLACE THIS"; // Replace with what you want the generic descriptions to say.
-//    const GENERIC_IMAGE = "https://ipfs.io/ipfs/QmUf9tDbkqnfHkQaMdFWSGAeXwVXWA61pFED7ypx4hcsfh"; // Replace with your generic image that will display for all NFTs pre-reveal.
+//    const GENERIC_IMAGE = "https://ipfs.io/ipfs/Qm..."; // Replace with your generic image that will display for all NFTs pre-reveal.
 
 // Automatically set contract address if deployed using the deployContract.js script
 try {
