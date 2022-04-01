@@ -42,7 +42,7 @@
 	    <section class="container"> 
 				  <a href="index.html" target="_self" alt="home" class="banner-menu">home </a>
 			        <img src="images/banners-and-logos/ape.png" alt="spacer" width="10" height="1" />  
-          <a href="#About" alt="about" class="banner-menu">about </a>
+                  <a href="#About" alt="about" class="banner-menu">about </a>
 			        <img src="images/banners-and-logos/ape.png" alt="spacer" width="10" height="1" />  
 				  <a href="#Team" alt="team" class="banner-menu">team </a>
 			        <img src="images/banners-and-logos/ape.png" alt="spacer" width="10" height="1" />  
@@ -88,7 +88,11 @@
             rel="noopener noreferrer"
           >
             <img src="images/header/opensea.png" alt="Opensea" />
-          </a>
+          </a>	
+		      <button class="wallet-btn btn" id="connectWallet" >
+			      <!-- <button class="banner-menu" id="connectWallet" > -->  
+            <span>Connect Wallet</span> 
+          </button>
         </div>
       </div>
 	</div>
@@ -110,11 +114,9 @@
       <div class="countdown">
 	    <!-- Launch date is set for Saturday 27 March at 16:00:45 UTC/my local time 10:00:45 -->
 		  <body class="container">
-
-        <h2 id="welcomeH2"></h2> <!-- These headings come from the constnats file -->
-        <h1 id="welcomeH1"></h1>
-        <p id="welcomeP"></p>
-
+           <h3 id="welcomeH2">Welcome to the Bored Ape Cannabis Club NFT Project!</h3> <!-- These headings come from the js/constants.js file, the id= has to be as coded, the header h1/h2/h3 etc can change so <h2 doesn't have to be the same as welcomeH2 ,use h sizes tha look good:  changed 2 to 3 and 1 to 2 -->
+           <h2 id="welcomeH1" align="left">Connect to MetaMask to Get Started</h2>
+           <p id="welcomeP">Flying High with Bored Apes</p>
            <h2>Complete Drop Coming Soon!</h2> 
            <!-- <p>Flying high with a New Community of Bored Apes, available soon!</p> -->
 		  </body>
@@ -398,7 +400,8 @@
 			<p align="left">&nbsp;</p>
 	
   <section>
-    <!-- <div id="spinner" class="dot-spin"></div> -->
+     <!-- <div id="spinner" class="dot-spin"></div>  --> 
+	  <div id="spinner"></div>
 
       <div class="splide-2" align="center">
         <div class="splide__track">
@@ -424,18 +427,17 @@
             <li class="splide__slide">
               <img src="images/slider/7.png" alt="slider image" height="98" width="98"/>
             </li>
-			      <li class="splide__slide">
-			        <img src="images/slider/8.png" alt="slider image" height="98" width="98"/>
-			      </li>
-			      <li class="splide__slide">
-			         <img src="images/slider/9.png" alt="slider image" height="98" width="98"/>
+			 <li class="splide__slide">
+			   <img src="images/slider/8.png" alt="slider image" height="98" width="98"/>
+			 </li>
+			 <li class="splide__slide">
+			    <img src="images/slider/9.png" alt="slider image" height="98" width="98"/>
             </li>
           </ul>
         </div>
       </div>
     </section>
-
-	 <br>
+    <br>
 		<hr size="1" noshade color="#7A97AB">
    </body>  	 
 <!-- Roadmap -->
