@@ -32,6 +32,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
+// This is the vertical slider which I don't use
 // const splide = new Splide(".splide", {
 //  type: "loop",
 //  arrows: false,

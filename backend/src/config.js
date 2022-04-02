@@ -89,7 +89,7 @@ const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a singl
 //         Presale:     16 Apr 2022
 //         Public Sale: 23 Apr 2022
 //
-// ** For testing set the Dates to:
+// ** For TESTING set the Dates to:
 //         Whitelist:   1 April 2022  (Whitelist is the Presale Date)
 //         Presale:     1 April 2022
 //         Public Sale: 2 April 2022
@@ -108,7 +108,7 @@ const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the ro
 const ROYALTY_ADDRESS = "0x91932159EeB1F5653c9c60C62B530A4d421e09F8"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
-const PRESALE_WHITELISTED_ADDRESSES = ["0x91932159EeB1F5653c9c60C62B530A4d421e09F8"]; // only update if you want to manually set the whitelisted addresses
+const PRESALE_WHITELISTED_ADDRESSES = [""]; // only update if you want to manually set the whitelisted addresses
 //                              April 09 2022 at 10:00 am local time Launch date whitelisting available right away
 
 // ** OPTIONAL **
