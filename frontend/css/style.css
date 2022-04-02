@@ -140,7 +140,8 @@ header .container {
   background-color: var(--bg-color);
   border-radius: 5px;
   border: 3px solid var(--bg-color-transparent);
-  box-shadow: var(--bg-color-transparent);
+  /* box-shadow: var(--bg-color-transparent); */
+  box-shadow: var(--card-shadow);
   padding: 5rem;
   margin-bottom: 2rem;
   opacity: 0;
@@ -756,21 +757,13 @@ email-input {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
-  .logo img {
-    width: 25vw;
-    margin-right: 10vw;
-  }
   .menu {
     gap: 1rem;
   }
-  .menu img {
-    width: 5vw;
-  }
   .wallet-btn {
     margin-left: 0;
-    padding: 0.25rem 0.5rem;
+    padding: 0.5rem 1rem;
     max-width: 8rem;
-    font-size: 0.75rem;
   }
   .not-connected {
     background-color: var(--bg-color-transparent);
@@ -778,14 +771,35 @@ email-input {
     padding: 2rem;
     margin: 0 auto;
   }
-  .not-connected h1 {
-    font-size: 2.5rem;
+  .countdown ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
-  .not-connected h2 {
+  .countdown .clock-item {
+    width: 100%;
+  }
+  .countdown .clock-item .count-number {
     font-size: 1.5rem;
   }
-  .not-connected p, .not-connected a {
+  .countdown .clock-item .count-text {
     font-size: 1rem;
+  }
+  .countdown h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  .countdown h2 {
+    padding-top: 0.5rem;
+  }
+  .countdown p {
+    font-size: 1rem;
+  }
+  .card {
+    padding: 1rem;
+  }
+  .mint-qty .btn {
+    padding: 1rem;
+    font-size: 13px;
   }
 }
 	
