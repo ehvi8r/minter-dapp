@@ -239,6 +239,9 @@ async function loadInfo() {
 
   const clockdiv = document.getElementById("countdown");
   clockdiv.setAttribute("data-date", startTime);
+
+  console.log(data-date);
+
   countdown();
 
   // HIDE SPINNER
