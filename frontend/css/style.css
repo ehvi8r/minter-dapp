@@ -805,6 +805,7 @@ email-input {
 	
 /* UTILITIES */
 .hidden {
-  display: none;
+/*    display: none;  */
 }
+
 
