@@ -95,13 +95,13 @@ const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a singl
 //         Public Sale: 2 April 2022
 //
 // Change the following line then: $ npm run update_public_mint_start_date ((Catch Error: NOK Contract is Frozen, need to create another contract))
-const PUBLIC_MINT_START_DATE = "2022-04-02T13:00:45+00:00";
+const PUBLIC_MINT_START_DATE = "2022-04-05T13:00:45+00:00";
 // const PUBLIC_MINT_START_DATE = "2022-04-03T13:00:45+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00 (+00:00 is UTC Time, EST is currently UTC - 4, we are at UTC -6 right now)
 //                                 2022-04-03T13:00:45-06:00 would be my current local time (UTC -6)
 //                                 April 03 2022 at 07:00 am local time Merida
  
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PRESALE_MINT_START_DATE = "2022-04-01T13:00:45+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
+const PRESALE_MINT_START_DATE = "2022-04-03T13:00:45+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
 //                                April 01 2022 at 07:00 am local time
 
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
